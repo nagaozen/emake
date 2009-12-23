@@ -36,13 +36,15 @@ DB Field Prototype
 ------------------
 
     {
-        primary_key: false,  
-        foreign_key: null,  
-        indexed: false  
+        primary_key: false,
+        foreign_key: null,
+        indexed: false
     }
 
 Example: User.emk
 -----------------
+
+> Note: Properties between [] are optional.
 
     {
         db: {
