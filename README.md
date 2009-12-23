@@ -1,8 +1,11 @@
 eMake
 =====
 
-eMake is a code generation tool which help programmers to create the base Model 
-used by the Evolved Team. It should accelerate the process behind coding:
+eMake is a code generation tool which helps the programmer to create the basic 
+Model structure used by the Evolved Team. It should accelerate the process
+behind coding the following layers: Data Persistance, Model Objects,
+Object-Relational Mapping, Data Input/Validation and Documentation usually 
+required by all our projects. This means emake should handle:
 
 1. MSSQL
     - Table
@@ -11,6 +14,7 @@ used by the Evolved Team. It should accelerate the process behind coding:
     - C# Interop ActiveX DLL
     - Web Service
 3. WEB
+    - ASP Class
     - HTML Form
     - ASP Process
     - Validations
