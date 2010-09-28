@@ -50,29 +50,47 @@ DB Field Prototype
 Example: User.emk
 -----------------
 
-> Note: Properties between [] are optional.
+> Note: Properties between _italic_ are optional.
 
     {
         db: {
             connection: "Provider=SQLOLEDB;Database ..."
         },
         dot_net: {
-            [namespace: "Namespace",]
+            _namespace: "Namespace",_
             version: 3.5
         },
         properties: {
             num_id: {
                 primary_key: true,
                 indexed: true,
-                type: (new Evolved.Number(documentation[, max, min, db_type, orm_type]))
+                type: "Number",
+                props: {
+                    documentation: "...",
+                    _max: 0,_
+                    _min: 1024,_
+                    _db_type: "int",_
+                    _orm_type: "int"_
+                }
             },
             alpha_id: {
-                [primary_key: false,]
+                _primary_key: false,_
                 indexed: true,
-                type: (new Evolved.Text(documentation[, length, default, validation, mask, db_type, orm_type]))
+                type: "Text",
+                props: {
+                    documentation: "...",
+                    _length: 32,_
+                    _default: "default",_
+                    _validation: /[A-Za-z]+/gi,_
+                    _mask: "###.###.###-##",_
+                    _db_type: "int",_
+                    _orm_type: "int"_
+                }
             },
             name: {
-                type: (new Evolved.Text(documentation[, length, default, validation, mask, db_type, orm_type]))
+                .
+                .
+                .
             }
             .
             .
