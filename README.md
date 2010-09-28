@@ -50,7 +50,7 @@ DB Field Prototype
 Example: User.emk
 -----------------
 
-> Note: Properties between _italic_ are optional.
+> Note: Properties between \_undersore\_ are optional.
 
     {
         db: {
